@@ -19,16 +19,17 @@ User can get their own OpenAI API key by following the following instructions:
 1. Go to https://platform.openai.com/account/api-keys.
 2. Click on the `+ Create new secret key` button.
 3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
-4. export OPENAI_API_KEY='YOUR_OPENAI_KEY'
+4. `export OPENAI_API_KEY='YOUR_OPENAI_KEY'`
 
 
 ## Run the App Locally
-Clone the repository from GitHub.
-Navigate to the directory containing the app.
-Install necessary packages using pip install -r requirements.txt.
-Run the app using the command streamlit run app.py.
-Enter the OpenAI API key when prompted.
-Upload a PDF document and start asking questions related to its content!
+1. Clone the repository from GitHub.
+2. Navigate to the directory containing the app.
+3. Install necessary packages using `pip install -r requirements.txt`
+4. Run the app 
+`streamlit run app.py`
+5. Enter the OpenAI API key when prompted.
+6. Upload a PDF document and start asking questions related to its content!
 
 ## Feedback Mechanism
 After receiving a response to your question, user have the option to rate the accuracy of the answer. This feedback is saved in user_feedbacks.csv in the root directory.
