@@ -1,17 +1,17 @@
 # 🦙📚 LlamaIndex - Chat with the Streamlit docs
 
-Build a chatbot powered by LlamaIndex that augments GPT 3.5 with the content of the Streamlit docs (or your own data).
+Build a chatbot powered by LlamaIndex that augments GPT 3.5 with the content  your own data.
 
 ## Overview of the App
 
 <img src="app.png" width="75%">
 
-- Takes user queries via Streamlit's `st.chat_input` and displays both user queries and model responses with `st.chat_message`
-- Uses LlamaIndex to load and index data and create a chat engine that will retrieve context from that data to respond to each user query
+- Allows users to upload a PDF document and ask questions related to the content of that document.
+- Utilizes Streamlit's st.file_uploader, st.chat_input, and st.chat_message to provide a conversational interface.
+- Uses LlamaIndex to load, index data, and create a chat engine that retrieves context from the uploaded document to respond to user queries.
+- Offers a feedback mechanism to rate the accuracy of the assistant's response.
 
-## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://lllamaindex-chat-with-docs.streamlit.app/)
 
 ## Get an OpenAI API key
 
@@ -19,7 +19,16 @@ You can get your own OpenAI API key by following the following instructions:
 1. Go to https://platform.openai.com/account/api-keys.
 2. Click on the `+ Create new secret key` button.
 3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
+4. export OPENAI_API_KEY='YOUR_OPENAI_KEY'
 
-## Try out the app
 
-Once the app is loaded, enter your question about the Streamlit library and wait for a response.
+## Run the App Locally
+Clone the repository from GitHub.
+Navigate to the directory containing the app.
+Install necessary packages using pip install -r requirements.txt.
+Run the app using the command streamlit run app.py.
+Enter the OpenAI API key when prompted.
+Upload a PDF document and start asking questions related to its content!
+
+## Feedback Mechanism
+After receiving a response to your question, you have the option to rate the accuracy of the answer. This feedback is saved in user_feedbacks.csv in the root directory.
