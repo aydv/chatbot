@@ -15,7 +15,7 @@ Build a chatbot powered by LlamaIndex that augments GPT 3.5 with the content  yo
 
 ## Get an OpenAI API key
 
-You can get your own OpenAI API key by following the following instructions:
+User can get their own OpenAI API key by following the following instructions:
 1. Go to https://platform.openai.com/account/api-keys.
 2. Click on the `+ Create new secret key` button.
 3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
@@ -31,4 +31,4 @@ Enter the OpenAI API key when prompted.
 Upload a PDF document and start asking questions related to its content!
 
 ## Feedback Mechanism
-After receiving a response to your question, you have the option to rate the accuracy of the answer. This feedback is saved in user_feedbacks.csv in the root directory.
+After receiving a response to your question, user have the option to rate the accuracy of the answer. This feedback is saved in user_feedbacks.csv in the root directory.
